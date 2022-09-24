@@ -18,6 +18,9 @@
       owner: "Chu"
     }
     window.localStorage.setItem('user', JSON.stringify(shop));
+    var a = localStorage.getItem(user);
+    user = JSON.parse(a);
+    console.log(a)
     document.getElementById("final").innerHTML = localStorage.getItem(shop)
 
 </script>
