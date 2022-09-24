@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <div id="final">shopname:</div>
+
+<script>
+    const shop = {
+      shopName: "winmart",
+      stock: stock = ["apple", "melon", "mango"],
+      owner: "Chu"
+    }
+    window.localStorage.setItem('user', JSON.stringify(shop));
+    document.getElementById("final").innerHTML = localStorage.getItem(shop)
+
+</script>
+</body>
+
+</html>
